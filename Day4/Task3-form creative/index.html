@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Form Creation</title>
+</head>
+<body>
+    <h1>Form Creation Example</h1>
+
+    <form action="/submit_form" method="POST">
+      
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+
+        <label for="subscribe">Agree</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="usa">USA</option>
+            <option value="cambodia">Cambodia</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+   
+        <label for="message">Decribe</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
